@@ -1,0 +1,116 @@
+body {
+    background-image: url(../IMG/monstercat.jpg);
+    background-size: 100%; 
+}
+
+#content {
+    position: absolute;
+    width: 1350px;
+    height: 675px;
+}
+
+#menu {
+    position: absolute;
+    width: 20%;
+    height:100%;
+    background-color: blue; 
+    z-index: 1;
+    left: -20%; 
+    top: 0%;    
+}
+
+#Ev1 {
+    position: absolute;
+    border-radius: 10px;
+    width: 60%;
+    height: 60%;
+    bottom: 31.25%;
+    left: 20%;
+    right: 20%;
+    background-color: red;
+}
+
+#Ev2 {
+    position: absolute;
+    border-radius: 10px;
+    width: 15%;
+    height: 17.5%;
+    top: 72%;
+    left: 20%;
+    background-color: green;
+}
+#Ev3 {
+    position: absolute;
+    border-radius: 10px;
+    width: 15%;
+    height: 17.5%;
+    top: 72%;
+    left: 42.5%;
+    background-color: blue;
+}
+#Ev4 {
+    position: absolute;
+    border-radius: 10px;
+    width: 15%;
+    height: 17.5%;
+    top: 72%;
+    left: 65%;
+    background-color: black;
+}
+#MenuButn {
+    position: absolute;
+    border-radius: 7.5px;
+    background-color: gray;
+    height: 7%;
+    width: 3.9375%;
+    left: 20%;
+}
+#btnMenuImg {
+    position: inherit;
+    height: 85%;
+    width: 85%;
+    top: 7.5%;
+    left: 7.5%;
+    z-index: 1;
+}
+
+#ToAC {
+    position: absolute;
+    border-radius: 10px;
+    width: 60%;
+    height: 60%;
+    bottom: 31.25%;
+    left: 20%;
+    right: 20%;
+    background-color: red;
+}
+#terug {
+    position: absolute;
+    border-radius: 7.5px;
+    background-color: gray;
+    height: 7%;
+    width: 3.9375%;
+    left: 80%;
+    top: 72%;
+}
+#verder {
+    position: absolute;
+    border-radius: 7.5px;
+    background-color: gray;
+    height: 7%;
+    width: 3.9375%;
+    left: 20%;
+    top: 72%;
+}
+#AccountCreated
+{
+    position: absolute;
+    border-radius: 10px;
+    width: 60%;
+    height: 76.25%;
+    bottom: 23%;
+    left: 20%;
+    right: 20%;
+    top: 8.75%;
+    background-color: red;
+}

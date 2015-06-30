@@ -1,0 +1,45 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>MoJoConcertsPHP</Name>
+    <ProjectGuid>{74d69650-c40e-479a-aebc-c21e89af3465}</ProjectGuid>
+    <RootNamespace>MoJoConcertsPHP</RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ASP\Aanmeld1.aspx" />
+    <Compile Include="ASP\Aanmeld1.aspx.cs" />
+    <Compile Include="ASP\TermsOfAccount.aspx" />
+    <Compile Include="ASP\TermsOfAccount.aspx.cs" />
+    <Compile Include="CSS\Style.css" />
+    <Compile Include="IMG\menu.svg" />
+    <Compile Include="IMG\monstercat.jpg" />
+    <Compile Include="IMG\monstercat2.jpg" />
+    <Compile Include="IMG\monstercat3.jpg" />
+    <Compile Include="IMG\monstercat_110814-13890.png" />
+    <Compile Include="IMG\_groter.jpg" />
+    <Compile Include="IMG\_kleiner.jpg" />
+    <Compile Include="JQUERY\AnimateLib.js" />
+    <Compile Include="JQUERY\Functions.js" />
+    <Compile Include="JQUERY\jquery-2.1.4.js" />
+    <Compile Include="PHP\MainPage.php" />
+    <Compile Include="MasterPage.master" />
+    <Compile Include="MasterPage.master.cs" />
+    <Compile Include="Web.config" />
+    <Compile Include="Web.Debug.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ASP" />
+    <Folder Include="CSS" />
+    <Folder Include="IMG" />
+    <Folder Include="JQUERY" />
+    <Folder Include="PHP" />
+  </ItemGroup>
+</Project>
