@@ -3,9 +3,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" Runat="Server">
-    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-    <br />
-    <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="Black" DayNameFormat="Shortest" Font-Names="Times New Roman" Font-Size="10pt" ForeColor="Black" Height="220px" NextPrevFormat="FullMonth" TitleFormat="Month" Width="400px">
+    <asp:TextBox ID="FestNaam" runat="server"></asp:TextBox>
+    &nbsp;Naam<br />
+    <asp:Calendar ID="StartCalendar" runat="server" BackColor="White" BorderColor="Black" DayNameFormat="Shortest" Font-Names="Times New Roman" Font-Size="10pt" ForeColor="Black" Height="220px" NextPrevFormat="FullMonth" TitleFormat="Month" Width="400px">
         <DayHeaderStyle BackColor="#CCCCCC" Font-Bold="True" Font-Size="7pt" ForeColor="#333333" Height="10pt" />
         <DayStyle Width="14%" />
         <NextPrevStyle Font-Size="8pt" ForeColor="White" />
@@ -15,9 +15,9 @@
         <TitleStyle BackColor="Black" Font-Bold="True" Font-Size="13pt" ForeColor="White" Height="14pt" />
         <TodayDayStyle BackColor="#CCCC99" />
     </asp:Calendar>
-    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-    Tijd hh:mm:ss<br />
-    <asp:Calendar ID="Calendar2" runat="server" BackColor="White" BorderColor="Black" DayNameFormat="Shortest" Font-Names="Times New Roman" Font-Size="10pt" ForeColor="Black" Height="220px" NextPrevFormat="FullMonth" TitleFormat="Month" Width="400px">
+    
+    <br />
+    <asp:Calendar ID="EindCalendar" runat="server" BackColor="White" BorderColor="Black" DayNameFormat="Shortest" Font-Names="Times New Roman" Font-Size="10pt" ForeColor="Black" Height="220px" NextPrevFormat="FullMonth" TitleFormat="Month" Width="400px">
         <DayHeaderStyle BackColor="#CCCCCC" Font-Bold="True" Font-Size="7pt" ForeColor="#333333" Height="10pt" />
         <DayStyle Width="14%" />
         <NextPrevStyle Font-Size="8pt" ForeColor="White" />
@@ -27,23 +27,30 @@
         <TitleStyle BackColor="Black" Font-Bold="True" Font-Size="13pt" ForeColor="White" Height="14pt" />
         <TodayDayStyle BackColor="#CCCC99" />
     </asp:Calendar>
-    <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
-    Tijd hh:mm:ss<br />
     <br />
-&nbsp;<asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+    <br />
+&nbsp;<asp:TextBox ID="Locatie" runat="server"></asp:TextBox>
     locatie<br />
     <br />
-    <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+    <asp:TextBox ID="Genre" runat="server"></asp:TextBox>
     genre<br />
     <br />
-    <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+    <asp:TextBox ID="AantalPodia" runat="server" TextMode="Number"></asp:TextBox>
     Aantal Podia<br />
     <br />
-    <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+    <asp:TextBox ID="Beschrijving" runat="server" TextMode="MultiLine"></asp:TextBox>
     Beschrijving<br />
     <br />
-    <asp:DropDownList ID="DropDownList1" runat="server">
+    <asp:DropDownList ID="DropDown" runat="server">
+        <asp:ListItem>Thema1</asp:ListItem>
+        <asp:ListItem>Thema2</asp:ListItem>
     </asp:DropDownList>
 &nbsp;Thema
+    <br />
+    <br />
+    <asp:Button ID="Create" runat="server" Text="Create Festival" OnClick="Create_Click" />
+    <br />
+    <br />
+    <asp:Literal ID="meld" runat="server"></asp:Literal>
 </asp:Content>
 

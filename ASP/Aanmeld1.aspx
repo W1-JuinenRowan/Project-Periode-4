@@ -33,7 +33,7 @@
         <br />
         <asp:TextBox ID="SQA" runat="server"></asp:TextBox>
         <br />
-        <asp:TextBox ID="arttxt" runat="server"></asp:TextBox>
+        <asp:TextBox ID="arttxt" runat="server" Height="22px"></asp:TextBox>
         <br />
         <asp:TextBox ID="fotovid" runat="server"></asp:TextBox>
         <br />
